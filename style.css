@@ -9,18 +9,19 @@ html {
 body {
   margin: 0;
   background: #000;
-  color: #fff;
+  color: #ff4fa3;
   font-family: "Times New Roman", Times, serif;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 a {
-  color: #fff;
+  color: #ff4fa3;
   text-decoration: none;
 }
 
 a:hover {
+  color: #ff8bc2;
   text-decoration: underline;
 }
 
@@ -28,25 +29,11 @@ a:hover {
 /* header */
 
 header {
-  width: 100%;
-  padding: 8px 10px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  padding: 14px 18px;
 }
 
 .site-title {
-  font-size: 14px;
-}
-
-nav {
-  display: flex;
-  gap: 12px;
-}
-
-nav a {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 
@@ -54,66 +41,63 @@ nav a {
 
 main {
   width: 100%;
-  max-width: 650px;
-  padding: 0 10px;
+  max-width: 700px;
+  padding: 0 18px;
 }
 
 
 /* intro */
 
 .intro {
-  padding-top: 35px;
-  padding-bottom: 45px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .intro p {
-  margin: 0 0 2px;
-  font-size: 12px;
+  margin: 0 0 5px;
+  font-size: 13px;
 }
 
 
 /* sections */
 
 section:not(.intro) {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .section-title {
-  padding-bottom: 4px;
-  border-bottom: 1px solid #fff;
-  font-size: 12px;
+  margin-bottom: 25px;
+  font-size: 13px;
 }
 
 
 /* releases */
 
 .release {
-  min-height: 30px;
-
   display: grid;
-  grid-template-columns: 45px 1fr 45px;
-  align-items: center;
+  grid-template-columns: 55px 1fr 50px;
+  align-items: baseline;
 
-  border-bottom: 1px solid #333;
+  margin-bottom: 18px;
 }
 
 .release-year {
-  color: #777;
+  color: #a52d68;
 }
 
 .release-info {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 14px;
 }
 
 .release-info a {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .release-info span {
-  color: #666;
-  font-size: 11px;
+  color: #a52d68;
+  font-size: 12px;
 }
 
 .release-action {
@@ -121,48 +105,45 @@ section:not(.intro) {
 }
 
 .release-action a {
-  color: #888;
+  color: #d63b82;
 }
 
 
 /* about */
 
 .about-text {
-  max-width: 400px;
-  padding-top: 10px;
+  max-width: 430px;
 }
 
 .about-text p {
-  margin: 0 0 8px;
+  margin: 0 0 18px;
 }
 
 
 /* links */
 
 .link-list {
-  padding-top: 8px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .link-list a {
-  margin-bottom: 2px;
-  font-size: 12px;
+  margin-bottom: 7px;
+  font-size: 13px;
 }
 
 
 /* footer */
 
 footer {
-  padding: 15px 10px 20px;
+  padding: 20px 18px 30px;
 
   display: flex;
   justify-content: space-between;
 
-  color: #555;
-  font-size: 10px;
+  color: #7d2450;
+  font-size: 11px;
 }
 
 
@@ -171,32 +152,29 @@ footer {
 @media (max-width: 600px) {
 
   body {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   header {
-    padding: 7px 8px;
-  }
-
-  nav {
-    gap: 9px;
+    padding: 12px 12px;
   }
 
   main {
-    padding: 0 8px;
+    padding: 0 12px;
   }
 
   .intro {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   section:not(.intro) {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .release {
-    grid-template-columns: 40px 1fr 40px;
+    grid-template-columns: 45px 1fr 45px;
+    margin-bottom: 20px;
   }
 
   .release-info {
@@ -209,11 +187,11 @@ footer {
 
   .release-info span {
     display: block;
-    margin-top: 1px;
+    margin-top: 3px;
   }
 
   footer {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }

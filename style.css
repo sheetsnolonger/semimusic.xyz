@@ -8,13 +8,11 @@ html {
 
 body {
   margin: 0;
-
   background: #000;
   color: #fff;
-
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 a {
@@ -31,8 +29,7 @@ a:hover {
 
 header {
   width: 100%;
-
-  padding: 14px 16px;
+  padding: 8px 10px;
 
   display: flex;
   justify-content: space-between;
@@ -40,16 +37,16 @@ header {
 }
 
 .site-title {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 nav {
   display: flex;
-  gap: 18px;
+  gap: 12px;
 }
 
 nav a {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -57,69 +54,66 @@ nav a {
 
 main {
   width: 100%;
-
-  padding: 0 16px;
+  max-width: 650px;
+  padding: 0 10px;
 }
 
 
 /* intro */
 
 .intro {
-  padding-top: 90px;
-  padding-bottom: 120px;
+  padding-top: 35px;
+  padding-bottom: 45px;
 }
 
 .intro p {
-  margin: 0 0 3px;
-
-  font-size: 14px;
+  margin: 0 0 2px;
+  font-size: 12px;
 }
 
 
 /* sections */
 
 section:not(.intro) {
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .section-title {
-  padding-bottom: 7px;
-
+  padding-bottom: 4px;
   border-bottom: 1px solid #fff;
-
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
 /* releases */
 
 .release {
-  min-height: 42px;
+  min-height: 30px;
 
   display: grid;
-  grid-template-columns: 70px 1fr 70px;
+  grid-template-columns: 45px 1fr 45px;
   align-items: center;
 
   border-bottom: 1px solid #333;
 }
 
 .release-year {
-  color: #888;
+  color: #777;
 }
 
 .release-info {
   display: flex;
   align-items: baseline;
-  gap: 15px;
+  gap: 10px;
 }
 
 .release-info a {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .release-info span {
-  color: #777;
-  font-size: 13px;
+  color: #666;
+  font-size: 11px;
 }
 
 .release-action {
@@ -127,27 +121,26 @@ section:not(.intro) {
 }
 
 .release-action a {
-  color: #aaa;
+  color: #888;
 }
 
 
 /* about */
 
 .about-text {
-  max-width: 500px;
-
-  padding-top: 20px;
+  max-width: 400px;
+  padding-top: 10px;
 }
 
 .about-text p {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
 
 /* links */
 
 .link-list {
-  padding-top: 15px;
+  padding-top: 8px;
 
   display: flex;
   flex-direction: column;
@@ -155,23 +148,21 @@ section:not(.intro) {
 }
 
 .link-list a {
-  margin-bottom: 4px;
-
-  font-size: 15px;
+  margin-bottom: 2px;
+  font-size: 12px;
 }
 
 
 /* footer */
 
 footer {
-  padding: 20px 16px 30px;
+  padding: 15px 10px 20px;
 
   display: flex;
   justify-content: space-between;
 
-  color: #666;
-
-  font-size: 12px;
+  color: #555;
+  font-size: 10px;
 }
 
 
@@ -180,32 +171,32 @@ footer {
 @media (max-width: 600px) {
 
   body {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   header {
-    padding: 12px;
+    padding: 7px 8px;
   }
 
   nav {
-    gap: 12px;
+    gap: 9px;
   }
 
   main {
-    padding: 0 12px;
+    padding: 0 8px;
   }
 
   .intro {
-    padding-top: 70px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   section:not(.intro) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .release {
-    grid-template-columns: 48px 1fr 50px;
+    grid-template-columns: 40px 1fr 40px;
   }
 
   .release-info {
@@ -222,7 +213,7 @@ footer {
   }
 
   footer {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }

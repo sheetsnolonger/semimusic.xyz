@@ -12,7 +12,7 @@ body {
   color: #ff4fa3;
   font-family: "Times New Roman", Times, serif;
   font-size: 13px;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 a {
@@ -29,11 +29,11 @@ a:hover {
 /* header */
 
 header {
-  padding: 14px 18px;
+  padding: 12px 16px;
 }
 
 .site-title {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 
@@ -41,33 +41,31 @@ header {
 
 main {
   width: 100%;
-  max-width: 700px;
-  padding: 0 18px;
+  max-width: 650px;
+  padding: 0 16px;
 }
 
 
 /* intro */
 
 .intro {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 35px;
+  padding-bottom: 45px;
 }
 
 .intro p {
-  margin: 0 0 5px;
-  font-size: 13px;
+  margin: 0 0 3px;
 }
 
 
 /* sections */
 
 section:not(.intro) {
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 
 .section-title {
-  margin-bottom: 25px;
-  font-size: 13px;
+  margin-bottom: 15px;
 }
 
 
@@ -75,10 +73,10 @@ section:not(.intro) {
 
 .release {
   display: grid;
-  grid-template-columns: 55px 1fr 50px;
+  grid-template-columns: 50px 1fr 45px;
   align-items: baseline;
 
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 }
 
 .release-year {
@@ -88,11 +86,7 @@ section:not(.intro) {
 .release-info {
   display: flex;
   align-items: baseline;
-  gap: 14px;
-}
-
-.release-info a {
-  font-size: 13px;
+  gap: 12px;
 }
 
 .release-info span {
@@ -109,17 +103,6 @@ section:not(.intro) {
 }
 
 
-/* about */
-
-.about-text {
-  max-width: 430px;
-}
-
-.about-text p {
-  margin: 0 0 18px;
-}
-
-
 /* links */
 
 .link-list {
@@ -129,21 +112,20 @@ section:not(.intro) {
 }
 
 .link-list a {
-  margin-bottom: 7px;
-  font-size: 13px;
+  margin-bottom: 5px;
 }
 
 
 /* footer */
 
 footer {
-  padding: 20px 18px 30px;
+  padding: 15px 16px 20px;
 
   display: flex;
   justify-content: space-between;
 
   color: #7d2450;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 
@@ -151,12 +133,8 @@ footer {
 
 @media (max-width: 600px) {
 
-  body {
-    font-size: 13px;
-  }
-
   header {
-    padding: 12px 12px;
+    padding: 10px 12px;
   }
 
   main {
@@ -164,17 +142,17 @@ footer {
   }
 
   .intro {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   section:not(.intro) {
-    margin-bottom: 80px;
+    margin-bottom: 45px;
   }
 
   .release {
-    grid-template-columns: 45px 1fr 45px;
-    margin-bottom: 20px;
+    grid-template-columns: 42px 1fr 42px;
+    margin-bottom: 10px;
   }
 
   .release-info {
@@ -187,7 +165,7 @@ footer {
 
   .release-info span {
     display: block;
-    margin-top: 3px;
+    margin-top: 1px;
   }
 
   footer {

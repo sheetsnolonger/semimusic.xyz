@@ -8,219 +8,221 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 
   background: #000;
   color: #fff;
 
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 a {
   color: #fff;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #aaa;
-}
-
-header {
-  width: 100%;
-  padding: 14px 18px;
-
-  border-bottom: 1px solid #fff;
-
-  display: block;
-}
-
-.logo {
-  display: block;
-
-  font-size: 24px;
-  font-weight: bold;
-
   text-decoration: none;
 }
 
-nav {
-  margin-top: 5px;
-
-  display: flex;
-  gap: 15px;
+a:hover {
+  text-decoration: underline;
 }
 
-nav a {
-  font-size: 15px;
-}
 
-main {
+/* header */
+
+header {
   width: 100%;
-  max-width: 850px;
 
-  margin: 0;
-  padding: 0 18px;
-}
-
-.hero {
-  min-height: 500px;
-
-  padding-top: 90px;
-  padding-bottom: 80px;
-
-  border-bottom: 1px solid #fff;
-}
-
-.hero h1 {
-  margin: 0;
-
-  font-family: "Times New Roman", Times, serif;
-  font-size: 72px;
-  font-weight: normal;
-  line-height: 0.9;
-  letter-spacing: -3px;
-}
-
-.hero p {
-  margin-top: 18px;
-
-  font-size: 18px;
-}
-
-section:not(.hero) {
-  padding: 45px 0;
-
-  border-bottom: 1px solid #fff;
-}
-
-h2 {
-  margin: 0 0 25px;
-
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.release {
-  padding: 12px 0;
+  padding: 14px 16px;
 
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
-  border-top: 1px solid #555;
 }
 
-.release:last-child {
-  border-bottom: 1px solid #555;
+.site-title {
+  font-size: 16px;
 }
 
-.release h3 {
-  margin: 0;
-
-  font-size: 18px;
-  font-weight: bold;
+nav {
+  display: flex;
+  gap: 18px;
 }
 
-.release p {
-  margin: 3px 0 0;
-
-  color: #aaa;
+nav a {
+  font-size: 14px;
 }
 
-.listen {
-  white-space: nowrap;
-}
 
-#about p {
-  max-width: 600px;
+/* main */
 
-  margin: 0;
-
-  font-size: 18px;
-}
-
-.links {
-  display: block;
-}
-
-.links a {
-  display: block;
-
-  width: fit-content;
-
-  margin: 5px 0;
-
-  font-size: 18px;
-}
-
-footer {
+main {
   width: 100%;
 
-  padding: 25px 18px;
+  padding: 0 16px;
+}
 
-  display: block;
 
+/* intro */
+
+.intro {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.intro p {
+  margin: 0 0 3px;
+
+  font-size: 14px;
+}
+
+
+/* sections */
+
+section:not(.intro) {
+  margin-bottom: 110px;
+}
+
+.section-title {
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid #fff;
+
+  font-size: 14px;
+}
+
+
+/* releases */
+
+.release {
+  min-height: 42px;
+
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  align-items: center;
+
+  border-bottom: 1px solid #333;
+}
+
+.release-year {
+  color: #888;
+}
+
+.release-info {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.release-info a {
+  font-size: 15px;
+}
+
+.release-info span {
   color: #777;
-
   font-size: 13px;
 }
 
-footer span {
-  display: block;
-  margin-bottom: 3px;
+.release-action {
+  text-align: right;
 }
+
+.release-action a {
+  color: #aaa;
+}
+
+
+/* about */
+
+.about-text {
+  max-width: 500px;
+
+  padding-top: 20px;
+}
+
+.about-text p {
+  margin: 0 0 12px;
+}
+
+
+/* links */
+
+.link-list {
+  padding-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link-list a {
+  margin-bottom: 4px;
+
+  font-size: 15px;
+}
+
+
+/* footer */
+
+footer {
+  padding: 20px 16px 30px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #666;
+
+  font-size: 12px;
+}
+
+
+/* mobile */
 
 @media (max-width: 600px) {
 
   body {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   header {
     padding: 12px;
   }
 
+  nav {
+    gap: 12px;
+  }
+
   main {
     padding: 0 12px;
   }
 
-  .hero {
-    min-height: 400px;
-
-    padding-top: 65px;
-    padding-bottom: 60px;
+  .intro {
+    padding-top: 70px;
+    padding-bottom: 90px;
   }
 
-  .hero h1 {
-    font-size: 52px;
-    letter-spacing: -2px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  section:not(.hero) {
-    padding: 35px 0;
+  section:not(.intro) {
+    margin-bottom: 80px;
   }
 
   .release {
-    display: block;
-    padding: 15px 0;
+    grid-template-columns: 48px 1fr 50px;
   }
 
-  .listen {
+  .release-info {
     display: block;
-    margin-top: 8px;
   }
 
-  #about p {
-    font-size: 17px;
+  .release-info a {
+    display: block;
+  }
+
+  .release-info span {
+    display: block;
+    margin-top: 1px;
   }
 
   footer {
-    padding: 20px 12px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
